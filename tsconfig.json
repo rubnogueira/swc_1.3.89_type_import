@@ -1,0 +1,52 @@
+{
+    "compilerOptions": {
+      "target": "es2022",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "declaration": true,
+      "checkJs": false,
+      "allowJs": false,
+      "outDir": "./dist",
+      "strict": true,
+      "composite": true,
+      "skipLibCheck": true,
+      "noImplicitAny": false,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "noImplicitReturns": true,
+      "resolveJsonModule": true,
+      "strictFunctionTypes": true,
+      "alwaysStrict": true,
+      "noImplicitUseStrict": false,
+      "rootDir": "src",
+      "incremental": true,
+      "tsBuildInfoFile": ".buildcache",
+      "sourceMap": true,
+      "lib": [
+        "es2022",
+        "dom"
+      ],
+      "typeRoots": [
+        "./@types",
+        "./node_modules/@types",
+      ],
+      "baseUrl": ".",
+      "paths": {}
+    },
+    "references": [],
+    "include": [
+      "src/**/*.json",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "dist",
+      "apiDist",
+      "node_modules"
+    ],
+    "ts-node": {
+      "swc": true,
+      "require": ["tsconfig-paths/register"]
+    }
+  }
+  
